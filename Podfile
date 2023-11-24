@@ -6,7 +6,7 @@ inhibit_all_warnings!
 target 'CodeTest' do	
   use_frameworks!
   
-  pod 'Masonry'
+  pod 'SnapKit'
   
   pod 'GoogleMaps'
   

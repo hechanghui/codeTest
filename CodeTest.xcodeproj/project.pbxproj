@@ -44,6 +44,12 @@
 		BAC056192B10455B00A0A063 /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056152B10455B00A0A063 /* AppTools.swift */; };
 		BAC0561A2B10455B00A0A063 /* GifImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056162B10455B00A0A063 /* GifImageOperation.swift */; };
 		BAC0561D2B10472A00A0A063 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0561C2B10472A00A0A063 /* MapViewController.swift */; };
+		BAC056212B104CCC00A0A063 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056202B104CCC00A0A063 /* CommonButton.swift */; };
+		BAC056232B10734500A0A063 /* AutocompleteBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056222B10734500A0A063 /* AutocompleteBaseViewController.swift */; };
+		BAC056272B1073CC00A0A063 /* PagingPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056262B1073CC00A0A063 /* PagingPhotoView.swift */; };
+		BAC056292B10743000A0A063 /* AutocompleteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056282B10743000A0A063 /* AutocompleteConfiguration.swift */; };
+		BAC0562D2B107FD800A0A063 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0562C2B107FD800A0A063 /* DistanceCalculator.swift */; };
+		BAC056312B1083D400A0A063 /* GoogleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056302B1083D400A0A063 /* GoogleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +92,12 @@
 		BAC056152B10455B00A0A063 /* AppTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
 		BAC056162B10455B00A0A063 /* GifImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImageOperation.swift; sourceTree = "<group>"; };
 		BAC0561C2B10472A00A0A063 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BAC056202B104CCC00A0A063 /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		BAC056222B10734500A0A063 /* AutocompleteBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteBaseViewController.swift; sourceTree = "<group>"; };
+		BAC056262B1073CC00A0A063 /* PagingPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingPhotoView.swift; sourceTree = "<group>"; };
+		BAC056282B10743000A0A063 /* AutocompleteConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteConfiguration.swift; sourceTree = "<group>"; };
+		BAC0562C2B107FD800A0A063 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		BAC056302B1083D400A0A063 /* GoogleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleModel.swift; sourceTree = "<group>"; };
 		C26183E6E40C453A9860B4C3 /* Pods-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FADA90C51A35B313491D90EF /* Pods-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +155,8 @@
 				BAC055D22B0F4FCC00A0A063 /* Application */,
 				BAC055D42B0F500400A0A063 /* Config */,
 				BAC055D52B0F501000A0A063 /* Core */,
+				BAC0562E2B1083AA00A0A063 /* Data */,
+				BAC0562A2B107D7100A0A063 /* Module */,
 				BAC055F72B0F517C00A0A063 /* Features */,
 				BAC055D32B0F4FDD00A0A063 /* Resources */,
 				BA2255392B0F4AF500775FBE /* Info.plist */,
@@ -224,6 +238,7 @@
 		BAC055F82B0F519600A0A063 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				BAC056242B10738800A0A063 /* Places */,
 				BAC0561B2B10470100A0A063 /* Map */,
 			);
 			path = page;
@@ -232,8 +247,10 @@
 		BAC055F92B0F51A200A0A063 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				BAC0561F2B104CC300A0A063 /* view */,
 				BAC055FC2B10419600A0A063 /* BaseNavigationController.swift */,
 				BAC056002B1041A400A0A063 /* BaseViewController.swift */,
+				BAC056282B10743000A0A063 /* AutocompleteConfiguration.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -272,9 +289,74 @@
 		BAC0561B2B10470100A0A063 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				BAC0561E2B104C4A00A0A063 /* view */,
 				BAC0561C2B10472A00A0A063 /* MapViewController.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		BAC0561E2B104C4A00A0A063 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BAC0561F2B104CC300A0A063 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056202B104CCC00A0A063 /* CommonButton.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BAC056242B10738800A0A063 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056252B10739700A0A063 /* view */,
+				BAC056222B10734500A0A063 /* AutocompleteBaseViewController.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		BAC056252B10739700A0A063 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056262B1073CC00A0A063 /* PagingPhotoView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BAC0562A2B107D7100A0A063 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BAC0562B2B107D8500A0A063 /* DistanceCalculator */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BAC0562B2B107D8500A0A063 /* DistanceCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				BAC0562F2B1083BD00A0A063 /* Model */,
+				BAC0562C2B107FD800A0A063 /* DistanceCalculator.swift */,
+			);
+			path = DistanceCalculator;
+			sourceTree = "<group>";
+		};
+		BAC0562E2B1083AA00A0A063 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BAC0562F2B1083BD00A0A063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056302B1083D400A0A063 /* GoogleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +495,8 @@
 				BAC055ED2B0F507C00A0A063 /* Notification+Apptools.swift in Sources */,
 				BAC056112B10430B00A0A063 /* RequestDataModel.swift in Sources */,
 				BAC055F12B0F507C00A0A063 /* Color+AppTools.swift in Sources */,
+				BAC056272B1073CC00A0A063 /* PagingPhotoView.swift in Sources */,
+				BAC0562D2B107FD800A0A063 /* DistanceCalculator.swift in Sources */,
 				BAC055E72B0F507C00A0A063 /* Image+AppTools.swift in Sources */,
 				BAC056042B1042FD00A0A063 /* CLLocation.swift in Sources */,
 				BAC056192B10455B00A0A063 /* AppTools.swift in Sources */,
@@ -421,6 +505,7 @@
 				BAC055F42B0F507C00A0A063 /* NibLoadable.swift in Sources */,
 				BAC055EC2B0F507C00A0A063 /* Button+countDown.swift in Sources */,
 				BAC055EA2B0F507C00A0A063 /* UITextField+AppTools.swift in Sources */,
+				BAC056292B10743000A0A063 /* AutocompleteConfiguration.swift in Sources */,
 				BA2255302B0F4AF400775FBE /* ViewController.swift in Sources */,
 				BAC055F22B0F507C00A0A063 /* View+AppTools.swift in Sources */,
 				BAC055FD2B10419600A0A063 /* BaseNavigationController.swift in Sources */,
@@ -434,13 +519,16 @@
 				BAC055F62B0F50E400A0A063 /* ColorConfig.swift in Sources */,
 				BAC0561D2B10472A00A0A063 /* MapViewController.swift in Sources */,
 				BAC055D72B0F502200A0A063 /* AppConfig.swift in Sources */,
+				BAC056232B10734500A0A063 /* AutocompleteBaseViewController.swift in Sources */,
 				BAC055EF2B0F507C00A0A063 /* Dictionary+Apptools.swift in Sources */,
 				BAC055FB2B0F520300A0A063 /* AppDelegate+Config.swift in Sources */,
 				BAC055EE2B0F507C00A0A063 /* Date+Apptools.swift in Sources */,
 				BAC056172B10455B00A0A063 /* GlobalHelper.swift in Sources */,
 				BA22552C2B0F4AF400775FBE /* AppDelegate.swift in Sources */,
 				BAC0561A2B10455B00A0A063 /* GifImageOperation.swift in Sources */,
+				BAC056212B104CCC00A0A063 /* CommonButton.swift in Sources */,
 				BA22552E2B0F4AF400775FBE /* SceneDelegate.swift in Sources */,
+				BAC056312B1083D400A0A063 /* GoogleModel.swift in Sources */,
 				BAC056182B10455B00A0A063 /* GCDTimer.swift in Sources */,
 				BAC056102B10430B00A0A063 /* Device+Apptools.swift in Sources */,
 			);

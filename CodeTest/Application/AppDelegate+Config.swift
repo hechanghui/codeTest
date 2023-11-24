@@ -8,6 +8,8 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import SnapKit
+
 
 extension AppDelegate {
   
