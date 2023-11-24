@@ -10,6 +10,14 @@ target 'CodeTest' do
   
   pod 'GoogleMaps'
   
+  pod 'GooglePlaces'
+    
+  pod 'SVProgressHUD'
+
+  pod 'HandyJSON'
+  
+  pod 'Moya'
+
 end
 
 
