@@ -36,6 +36,7 @@ struct DirectionLoction: HandyJSON {
 struct DirectionLegs: HandyJSON {
     
     var distance : DirectionText?
+    var duration : DirectionText?
     var lng : DirectionText?
     var end_address : String?
     var end_location : DirectionLoction?

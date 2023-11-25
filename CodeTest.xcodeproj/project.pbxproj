@@ -44,12 +44,14 @@
 		BAC056192B10455B00A0A063 /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056152B10455B00A0A063 /* AppTools.swift */; };
 		BAC0561A2B10455B00A0A063 /* GifImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056162B10455B00A0A063 /* GifImageOperation.swift */; };
 		BAC0561D2B10472A00A0A063 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0561C2B10472A00A0A063 /* MapViewController.swift */; };
-		BAC056212B104CCC00A0A063 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056202B104CCC00A0A063 /* CommonButton.swift */; };
+		BAC056212B104CCC00A0A063 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056202B104CCC00A0A063 /* CommonView.swift */; };
 		BAC056232B10734500A0A063 /* AutocompleteBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056222B10734500A0A063 /* AutocompleteBaseViewController.swift */; };
 		BAC056272B1073CC00A0A063 /* PagingPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056262B1073CC00A0A063 /* PagingPhotoView.swift */; };
 		BAC056292B10743000A0A063 /* AutocompleteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056282B10743000A0A063 /* AutocompleteConfiguration.swift */; };
 		BAC0562D2B107FD800A0A063 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0562C2B107FD800A0A063 /* DistanceCalculator.swift */; };
 		BAC056312B1083D400A0A063 /* GoogleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056302B1083D400A0A063 /* GoogleModel.swift */; };
+		BAC056352B10E0D000A0A063 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056332B10E0D000A0A063 /* AlertView.swift */; };
+		BAC056392B118DEE00A0A063 /* NavigateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056382B118DEE00A0A063 /* NavigateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,12 +94,14 @@
 		BAC056152B10455B00A0A063 /* AppTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
 		BAC056162B10455B00A0A063 /* GifImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImageOperation.swift; sourceTree = "<group>"; };
 		BAC0561C2B10472A00A0A063 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		BAC056202B104CCC00A0A063 /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		BAC056202B104CCC00A0A063 /* CommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		BAC056222B10734500A0A063 /* AutocompleteBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteBaseViewController.swift; sourceTree = "<group>"; };
 		BAC056262B1073CC00A0A063 /* PagingPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingPhotoView.swift; sourceTree = "<group>"; };
 		BAC056282B10743000A0A063 /* AutocompleteConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteConfiguration.swift; sourceTree = "<group>"; };
 		BAC0562C2B107FD800A0A063 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
 		BAC056302B1083D400A0A063 /* GoogleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleModel.swift; sourceTree = "<group>"; };
+		BAC056332B10E0D000A0A063 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		BAC056382B118DEE00A0A063 /* NavigateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateService.swift; sourceTree = "<group>"; };
 		C26183E6E40C453A9860B4C3 /* Pods-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FADA90C51A35B313491D90EF /* Pods-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -305,7 +309,7 @@
 		BAC0561F2B104CC300A0A063 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				BAC056202B104CCC00A0A063 /* CommonButton.swift */,
+				BAC056202B104CCC00A0A063 /* CommonView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -330,6 +334,8 @@
 		BAC0562A2B107D7100A0A063 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				BAC056372B118DD500A0A063 /* NavigateService */,
+				BAC056322B10E0D000A0A063 /* AlertView */,
 				BAC0562B2B107D8500A0A063 /* DistanceCalculator */,
 			);
 			path = Module;
@@ -357,6 +363,22 @@
 				BAC056302B1083D400A0A063 /* GoogleModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BAC056322B10E0D000A0A063 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056332B10E0D000A0A063 /* AlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		BAC056372B118DD500A0A063 /* NavigateService */ = {
+			isa = PBXGroup;
+			children = (
+				BAC056382B118DEE00A0A063 /* NavigateService.swift */,
+			);
+			path = NavigateService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,11 +519,13 @@
 				BAC055F12B0F507C00A0A063 /* Color+AppTools.swift in Sources */,
 				BAC056272B1073CC00A0A063 /* PagingPhotoView.swift in Sources */,
 				BAC0562D2B107FD800A0A063 /* DistanceCalculator.swift in Sources */,
+				BAC056352B10E0D000A0A063 /* AlertView.swift in Sources */,
 				BAC055E72B0F507C00A0A063 /* Image+AppTools.swift in Sources */,
 				BAC056042B1042FD00A0A063 /* CLLocation.swift in Sources */,
 				BAC056192B10455B00A0A063 /* AppTools.swift in Sources */,
 				BAC0560F2B10430B00A0A063 /* NetWorkManager.swift in Sources */,
 				BAC056012B1041A400A0A063 /* BaseViewController.swift in Sources */,
+				BAC056392B118DEE00A0A063 /* NavigateService.swift in Sources */,
 				BAC055F42B0F507C00A0A063 /* NibLoadable.swift in Sources */,
 				BAC055EC2B0F507C00A0A063 /* Button+countDown.swift in Sources */,
 				BAC055EA2B0F507C00A0A063 /* UITextField+AppTools.swift in Sources */,
@@ -526,7 +550,7 @@
 				BAC056172B10455B00A0A063 /* GlobalHelper.swift in Sources */,
 				BA22552C2B0F4AF400775FBE /* AppDelegate.swift in Sources */,
 				BAC0561A2B10455B00A0A063 /* GifImageOperation.swift in Sources */,
-				BAC056212B104CCC00A0A063 /* CommonButton.swift in Sources */,
+				BAC056212B104CCC00A0A063 /* CommonView.swift in Sources */,
 				BA22552E2B0F4AF400775FBE /* SceneDelegate.swift in Sources */,
 				BAC056312B1083D400A0A063 /* GoogleModel.swift in Sources */,
 				BAC056182B10455B00A0A063 /* GCDTimer.swift in Sources */,

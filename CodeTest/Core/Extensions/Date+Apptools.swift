@@ -11,10 +11,10 @@ import UIKit
 
 extension Date {
     /// 获取当前 秒级 时间戳 - 10位
-    static public var timeStamp : String {
+    static public var timeStamp : Int {
         let timeInterval: TimeInterval = Date().timeIntervalSince1970
         let timeStamp = Int(timeInterval)
-        return "\(timeStamp)"
+        return timeStamp
     }
     /// 获取当前 毫秒级 时间戳 - 13位
     static public var milliStamp : String {

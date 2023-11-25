@@ -89,5 +89,25 @@ class CommonButton: UIButton {
     }
 }
 
+class CommonLabel : UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setStyle()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setStyle()
+    }
 
+    
+    
+    //默认样式
+    func setStyle(_ cornerRadius : CGFloat = 20,_ font : CGFloat = 16){
+        self.textColor = BackColor3
+        self.font = FontHeadline3
+        self.numberOfLines = 0
+        self.textAlignment = .center
+    }
+}
 
