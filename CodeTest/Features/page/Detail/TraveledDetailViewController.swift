@@ -12,7 +12,7 @@ class TraveledDetailViewController: BaseViewController, GMSMapViewDelegate {
 
     private let cameraLatitude: CLLocationDegrees = -0
     private let cameraLongitude: CLLocationDegrees = 0
-    private let cameraZoom: Float = 14
+    private let cameraZoom: Float = 16
     private var observation: NSKeyValueObservation?
 
     
@@ -68,8 +68,6 @@ class TraveledDetailViewController: BaseViewController, GMSMapViewDelegate {
             self?.location = mapView.myLocation
         }
         mapView.delegate = self
-//        mapView.settings.compassButton = true
-//        mapView.settings.myLocationButton = true
         mapView.isMyLocationEnabled = true
         self.view.addSubview(mapView)
 

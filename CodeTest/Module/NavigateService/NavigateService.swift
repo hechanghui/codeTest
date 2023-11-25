@@ -25,7 +25,7 @@ class NavigateService {
     var status : NavigateStatus = .normal
     var path = GMSMutablePath()
     var locationArray = [CLLocationCoordinate2D]()
-    
+    private var tmpTime : Int = 0
     
     func startNavigate() {
         if (status != .normal){
@@ -54,12 +54,18 @@ class NavigateService {
         if (new.latitude == last.latitude && new.longitude == last.longitude){
             return
         }
-        let location1 = CLLocation(latitude: last.latitude, longitude: last.longitude)
-        let location2 = CLLocation(latitude: new.latitude, longitude: new.longitude)
-        let distanceInMeters = location1.distance(from: location2)
-        totalDistance += distanceInMeters
+        
+        //gps误差导致总数偏多的问题
+        if tmpTime != Date.timeStamp {
+            let location1 = CLLocation(latitude: last.latitude, longitude: last.longitude)
+            let location2 = CLLocation(latitude: new.latitude, longitude: new.longitude)
+            let distanceInMeters = location1.distance(from: location2)
+            totalDistance += distanceInMeters
+        }
+        
         locationArray.append(new)
         path.add(new)
+        tmpTime = Date.timeStamp
     }
     
     
