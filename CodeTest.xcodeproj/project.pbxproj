@@ -52,6 +52,7 @@
 		BAC056312B1083D400A0A063 /* GoogleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056302B1083D400A0A063 /* GoogleModel.swift */; };
 		BAC056352B10E0D000A0A063 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056332B10E0D000A0A063 /* AlertView.swift */; };
 		BAC056392B118DEE00A0A063 /* NavigateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056382B118DEE00A0A063 /* NavigateService.swift */; };
+		BAC0563C2B11D1C000A0A063 /* TraveledDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC0563B2B11D1C000A0A063 /* TraveledDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		BAC056302B1083D400A0A063 /* GoogleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleModel.swift; sourceTree = "<group>"; };
 		BAC056332B10E0D000A0A063 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		BAC056382B118DEE00A0A063 /* NavigateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateService.swift; sourceTree = "<group>"; };
+		BAC0563B2B11D1C000A0A063 /* TraveledDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraveledDetailViewController.swift; sourceTree = "<group>"; };
 		C26183E6E40C453A9860B4C3 /* Pods-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FADA90C51A35B313491D90EF /* Pods-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-CodeTest/Pods-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +244,7 @@
 		BAC055F82B0F519600A0A063 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				BAC0563A2B11D1A000A0A063 /* Detail */,
 				BAC056242B10738800A0A063 /* Places */,
 				BAC0561B2B10470100A0A063 /* Map */,
 			);
@@ -381,6 +384,14 @@
 			path = NavigateService;
 			sourceTree = "<group>";
 		};
+		BAC0563A2B11D1A000A0A063 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BAC0563B2B11D1C000A0A063 /* TraveledDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -516,6 +527,7 @@
 			files = (
 				BAC055ED2B0F507C00A0A063 /* Notification+Apptools.swift in Sources */,
 				BAC056112B10430B00A0A063 /* RequestDataModel.swift in Sources */,
+				BAC0563C2B11D1C000A0A063 /* TraveledDetailViewController.swift in Sources */,
 				BAC055F12B0F507C00A0A063 /* Color+AppTools.swift in Sources */,
 				BAC056272B1073CC00A0A063 /* PagingPhotoView.swift in Sources */,
 				BAC0562D2B107FD800A0A063 /* DistanceCalculator.swift in Sources */,

@@ -42,8 +42,8 @@ class MapViewController: BaseViewController  {
     private var observation: NSKeyValueObservation?
     private var timer: DispatchSourceTimer?
     
-    private var speedLabel : UILabel!
-    private var timeLabel: UILabel!
+    private var speedLabel : CommonLabel!
+    private var timeLabel: CommonLabel!
     private var navigateMode : String = "walking"
 
     
@@ -179,6 +179,8 @@ class MapViewController: BaseViewController  {
             AlertTool.alertTitle(title: "到达目的,结束导航？",content: nil) {[weak self] compelete in
                 if compelete {
                     self?.endNavigatingState()
+                    let DetailVC = TraveledDetailViewController()
+                    self?.navigationController?.pushViewController(DetailVC, animated: true)
                 }
             }
         }else{
@@ -222,6 +224,8 @@ class MapViewController: BaseViewController  {
         self.speedLabel.isHidden = true
         resetDistanceBtn.isHidden = true
         NavigateService.share.endNavigate()
+        polyline?.map = nil
+        userPolyline?.map = nil
         timer?.suspend()
     }
     

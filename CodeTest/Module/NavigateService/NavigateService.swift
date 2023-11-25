@@ -31,6 +31,7 @@ class NavigateService {
         if (status != .normal){
             return
         }
+        self.resetService()
         status = .navigating
         startTime = Date.timeStamp
     }
